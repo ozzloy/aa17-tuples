@@ -36,9 +36,16 @@ print(sum(evens) / len(evens))
 #         returns the minimum value, the maximum value and the average
 #         (mean)
 
+def minmaxmean(onething): # lst => list of things
+    return min(onething), max(onething), sum(onething)/len(onething)    # returns one tuple of the three things
 
 # Step 5B: Use print to confirm you function is working on evens and
 # odds
 
+print(minmaxmean((3, 9, 11)))
+print(minmaxmean([2, 6, 12]))
+
 # BONUS: Call your function with a new tuple of your own creation And
 #        print the results in a pretty way
+
+print(minmaxmean((3, 9, 11)))
